@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduLearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🎓 EduLearn</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link active">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="teachers.html" class="nav-link">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Courses</h1>
+                <p>Choose from our comprehensive programming courses</p>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <div class="container">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-c.jpg" alt="C Programming Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>C Programming</h3>
+                            <p>Master the basics of C programming language.</p>
+                            <div class="course-details">
+                                <span>⏱️ 8 weeks</span>
+                                <span>📊 Beginner</span>
+                            </div>
+                            <div class="course-price">$79</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('C Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-cpp.jpg" alt="C++ Programming Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>C++ Programming</h3>
+                            <p>Learn object-oriented programming with C++.</p>
+                            <div class="course-details">
+                                <span>⏱️ 10 weeks</span>
+                                <span>📊 Intermediate</span>
+                            </div>
+                            <div class="course-price">$89</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('C++ Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-python.jpg" alt="Python Programming Course" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InB5dGhvbiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzM3NzZhYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzQ1ODRiNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcHl0aG9uKSIvPjx0ZXh0IHg9IjUwJSIgeT0iNDAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7wn5ONPC90ZXh0Pjx0ZXh0IHg9IjUwJSIgeT0iNjUlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QeXRob248L3RleHQ+PC9zdmc+'">
+                        </div>
+                        <div class="course-content">
+                            <h3>Python Programming</h3>
+                            <p>Complete Python course from beginner to advanced.</p>
+                            <div class="course-details">
+                                <span>⏱️ 12 weeks</span>
+                                <span>📊 All Levels</span>
+                            </div>
+                            <div class="course-price">$99</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('Python Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-javascript.jpg" alt="JavaScript Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>JavaScript & Web Dev</h3>
+                            <p>Learn JavaScript for modern web development.</p>
+                            <div class="course-details">
+                                <span>⏱️ 14 weeks</span>
+                                <span>📊 Intermediate</span>
+                            </div>
+                            <div class="course-price">$109</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('JavaScript Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-java.jpg" alt="Java Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>Java Programming</h3>
+                            <p>Comprehensive Java course covering all basics.</p>
+                            <div class="course-details">
+                                <span>⏱️ 16 weeks</span>
+                                <span>📊 All Levels</span>
+                            </div>
+                            <div class="course-price">$119</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('Java Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-react.jpg" alt="React Course" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InJlYWN0IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNjFkYWZiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjo3YmUwZmMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3JlYWN0KSIvPjx0ZXh0IHg9IjUwJSIgeT0iNDAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7imJvvuI88L3RleHQ+PHRleHQgeD0iNTAlIiB5PSI2NSUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJlYWN0PC90ZXh0Pjwvc3ZnPg=='">
+                        </div>
+                        <div class="course-content">
+                            <h3>React.js Development</h3>
+                            <p>Build modern web applications with React.js.</p>
+                            <div class="course-details">
+                                <span>⏱️ 10 weeks</span>
+                                <span>📊 Advanced</span>
+                            </div>
+                            <div class="course-price">$129</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('React.js Development')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

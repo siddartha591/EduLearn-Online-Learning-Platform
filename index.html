@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Online Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>🎓 EduLearn</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="teachers.html" class="nav-link">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Learn Programming Online</h1>
+                    <p>Master the most in-demand programming languages with our expert-led courses. Join thousands of students learning from anywhere, anytime.</p>
+                    <div class="hero-buttons">
+                        <a href="courses.html" class="btn btn-primary btn-large">Explore Courses</a>
+                        <a href="about.html" class="btn btn-secondary btn-large">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Courses</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Instructors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose EduLearn?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍💻</div>
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from industry professionals with years of experience</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Hands-on Projects</h3>
+                        <p>Build real-world projects to strengthen your portfolio</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Certification</h3>
+                        <p>Get certified upon completion of courses</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-courses">
+            <div class="container">
+                <h2>Popular Courses</h2>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-python.jpg" alt="Python Course" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjE4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InB5dGhvbiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzM3NzZhYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzQ1ODRiNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcHl0aG9uKSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UHl0aG9uPC90ZXh0Pjwvc3ZnPg=='">
+                        </div>
+                        <div class="course-content">
+                            <h3>Python Programming</h3>
+                            <p>Learn Python from basics to advanced concepts</p>
+                            <div class="course-price">$99</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('Python Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-c.jpg" alt="C Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>C Programming</h3>
+                            <p>Master the fundamentals of C programming</p>
+                            <div class="course-price">$79</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('C Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/course-cpp.jpg" alt="C++ Course">
+                        </div>
+                        <div class="course-content">
+                            <h3>C++ Programming</h3>
+                            <p>Advanced programming with C++</p>
+                            <div class="course-price">$89</div>
+                            <button class="btn btn-primary btn-sm" onclick="enrollCourse('C++ Programming')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-courses">
+                    <a href="courses.html" class="btn btn-outline">View All Courses</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
